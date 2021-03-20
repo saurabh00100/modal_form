@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% block content %}
+{% for post in object_list %}
+<div style="background-color: khaki;" class="card mb-2 ">
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.content}}</p>
+    <span>{{post.author}}</span>
+    <a style="float: right;" href="#" class="btn btn-primary ">Go somewhere</a>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
